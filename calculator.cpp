@@ -7,7 +7,7 @@ int main() {
 	cout << "Enter two numbers: ";
 	cin >> number1 >> number2;
 
-	cout << "Enter the sign (+, -, *, /): ";
+	cout << "Enter the sign (+, -, *, /, ^): ";
 	cin >> operation;
 
 	switch (operation)
@@ -28,6 +28,9 @@ int main() {
 		else {
 			cout << "Answer: " << number1 / number2;
 		}
+		break;
+	case '^':
+		cout << "Answer: " << pow(number1, number2);
 		break;
 	default:
 		cerr << "Incorrectly entered sign";
